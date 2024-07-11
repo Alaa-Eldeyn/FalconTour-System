@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+link {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#loading-spinner {
+  animation: loading-spinner 0.5s linear infinite;
+  position: fixed;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes loading-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Cairo", sans-serif !important;
+}
+.alert-success,
+.alert-error {
+  width: fit-content !important;
+  position: fixed !important;
+  right: 5rem !important;
+  top: 2rem !important;
+  border-radius: 5px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
